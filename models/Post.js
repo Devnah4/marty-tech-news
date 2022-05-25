@@ -21,9 +21,6 @@ Post.init(
       // Sets the value to read text so it populates as text
       type: DataTypes.TEXT,
       allowNull: false,
-      validate: {
-        isURL: true,
-      },
     },
     user_id: {
       type: DataTypes.INTEGER,
