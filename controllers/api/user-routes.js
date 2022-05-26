@@ -64,6 +64,10 @@ router.post("/", withAuth, (req, res) => {
       res.json(dbUserData);
     });
   })
+  .catch(err => { 
+    console.log(err);
+    res.status(500).json(err);
+});
 });
 
 // Login code
@@ -107,7 +111,7 @@ router.post('/logout', (req, res) => {
   }
 })
 
-// PUT /api/users/1
+// PUT /api/users/
 router.put("/:id", withAuth, (req, res) => {
   User.update(req.body, {
     individualHooks: true,
