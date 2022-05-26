@@ -47,13 +47,15 @@ router.get("/:id", (req, res) => {
 });
 
 // POST /api/users
-router.post("/", withAuth, (req, res) => {
+router.post("/", (req, res) => {
   // should expect {usernam: 'value', email: 'value@value.com', password: 'value'}
+  console.log(req.body);
   User.create({
     username: req.body.username,
     email: req.body.email,
     password: req.body.password,
   }).then(dbUserData => {
+    console.log(dbUserData);
     req.session.save(() => {
       // Gives server acces to username and id
       req.session.user_id = dbUserData.id;
