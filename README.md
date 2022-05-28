@@ -3,8 +3,9 @@ Simple webpage that will allow you to post the latest tech news in a CMS-style p
 
 ## Preview
 
-- [Click here for a Video demo!](https://www.youtube.com/watch?v=ND7LVlr3UkE)
-- [Click here for a preview image!](https://user-images.githubusercontent.com/98830462/169703058-51855c26-7ee2-4233-b43c-ec24e0b23b46.PNG)
+- [Click here for a Video demo!](https://user-images.githubusercontent.com/98830462/170813050-7492db1f-dde1-4d09-8de6-a9f2dd6ceeca.mp4)
+- [Click here for a preview image!](https://user-images.githubusercontent.com/98830462/170813053-488849e0-6f47-4f31-9d03-d72fea134f26.PNG)
+- [View a Live Demo!](https://marty-tech-news-app.herokuapp.com/)
 ***
 
 ## Install
@@ -45,9 +46,9 @@ I recommend [Insomnia](https://insomnia.rest/) for testing and usage
 
 ## Made with
 
-- Forked from [Coding Bootcamp](https://github.com/coding-boot-camp)
-- Uses [Node.js](https://nodejs.org/en/)
+- [Node.js](https://nodejs.org/en/)
 - [sequelize](https://sequelize.org/)
 - [mysql2](https://dev.mysql.com/doc/)
 - [express](https://expressjs.com/)
 - [dontenv](https://www.npmjs.com/package/dotenv)
+- [Handlebars.js](https://handlebarsjs.com/)
