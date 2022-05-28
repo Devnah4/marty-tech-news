@@ -1,0 +1,25 @@
+{{!-- Generates the comment viewable post --}}
+{{> post-info post}}
+
+{{!-- Makes Form visible only when logged in --}}
+{{#if loggedIn}}
+{{!-- Creates comment submission form --}}
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">add comment</button>
+  </div>
+</form>
+{{/if}}
+
+{{!-- Creates comment sections --}}
+{{> comments post.comments}}
+
+{{!-- Only validates ig logged in --}}
+{{#if loggedIn}}
+{{!-- Calls comment and upvote scripts --}}
+<script src="/javascript/comment.js"></script>
+{{/if}}
